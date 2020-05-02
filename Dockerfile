@@ -2,7 +2,7 @@ FROM debian:latest
 
 WORKDIR /drawio
 
-ENV DRAWIO_VERSION "13.0.1"
+ENV DRAWIO_VERSION "12.6.5"
 RUN set -e; \
   apt-get update && apt-get install -y \
   libappindicator3-1 \
@@ -25,11 +25,8 @@ RUN set -e; \
   rm -rf /var/lib/apt/lists/*;
 
 ENV DRAWIO_CLI "/opt/draw.io/drawio"
-RUN useradd -ms /bin/bash drawio; usermod -aG sudo drawio
-USER drawio
 
-COPY --chown=drawio entrypoint.sh .
+COPY entrypoint.sh .
 
-WORKDIR /data
 ENTRYPOINT [ "/drawio/entrypoint.sh" ]
 CMD [ "--help" ]

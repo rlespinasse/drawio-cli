@@ -6,4 +6,4 @@ build:
 
 RUN_ARGS?=
 run:
-	docker run -it --privileged -v $(PWD):/data rlespinasse/drawio-cli:local ${RUN_ARGS}
+	docker run -it -v $(PWD):/data rlespinasse/drawio-cli:local ${RUN_ARGS}

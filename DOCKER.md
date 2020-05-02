@@ -13,7 +13,7 @@ See [Dockerfile][2]
 ## Usage
 
 ```bash
-docker run -it --privileged -v $(pwd):/data rlespinasse/drawio-cli --help
+docker run -it -v $(pwd):/data rlespinasse/drawio-cli --help
 ```
 
 Want to read more, go to [rlespinasse/drawio-cli][1] on GitHub.
