@@ -14,25 +14,25 @@ docker pull rlespinasse/drawio-cli
 .Print help
 [source,bash]
 ----
-docker run -it --privileged -v $(pwd):/data rlespinasse/drawio-cli --help
+docker run -it -v $(pwd):/data rlespinasse/drawio-cli --help
 ----
 
 .Create new file
 [source,bash]
 ----
-docker run -it --privileged -v $(pwd):/data rlespinasse/drawio-cli --create somefile.drawio
+docker run -it -v $(pwd):/data rlespinasse/drawio-cli --create somefile.drawio
 ----
 
 .Check a file
 [source,bash]
 ----
-docker run -it --privileged -v $(pwd):/data rlespinasse/drawio-cli --check somefile.drawio
+docker run -it -v $(pwd):/data rlespinasse/drawio-cli --check somefile.drawio
 ----
 
 .Export a file
 [source,bash]
 ----
-docker run -it --privileged -v $(pwd):/data rlespinasse/drawio-cli --export somefile.drawio
+docker run -it -v $(pwd):/data rlespinasse/drawio-cli --export somefile.drawio
 ----
 
 == Serve as docker base image
