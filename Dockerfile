@@ -27,6 +27,7 @@ RUN set -e; \
 ENV DRAWIO_CLI "/opt/draw.io/drawio"
 
 COPY entrypoint.sh .
+COPY runner.sh .
 
 ENTRYPOINT [ "/drawio/entrypoint.sh" ]
 CMD [ "--help" ]

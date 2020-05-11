@@ -1,6 +1,6 @@
 = Draw.io cli
 
-Cli for Draw.io
+CLI for Draw.io
 
 == Installation
 
@@ -11,29 +11,18 @@ docker pull rlespinasse/drawio-cli
 
 == Usage
 
-.Print help
 [source,bash]
 ----
 docker run -it -v $(pwd):/data rlespinasse/drawio-cli --help
 ----
 
-.Create new file
-[source,bash]
-----
-docker run -it -v $(pwd):/data rlespinasse/drawio-cli --create somefile.drawio
-----
+Possibilities:
 
-.Check a file
-[source,bash]
-----
-docker run -it -v $(pwd):/data rlespinasse/drawio-cli --check somefile.drawio
-----
+* Create a Draw.io file
+* Check a Draw.io file
+* Export a Draw.io file (or inside a folder)
 
-.Export a file
-[source,bash]
-----
-docker run -it -v $(pwd):/data rlespinasse/drawio-cli --export somefile.drawio
-----
+TIP: Set DRAWIO_CLI_SUPPRESS_WARNINGS to true to avoid some warnings: `-e DRAWIO_CLI_SUPPRESS_WARNINGS=true`
 
 == Serve as docker base image
 

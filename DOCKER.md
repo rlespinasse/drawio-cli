@@ -1,6 +1,6 @@
 # Draw.io cli
 
-Cli for Draw.io
+CLI for Draw.io
 
 ## Installation
 
