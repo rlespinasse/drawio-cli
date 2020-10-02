@@ -2,7 +2,7 @@ FROM debian:latest
 
 WORKDIR /drawio
 
-ENV DRAWIO_VERSION "12.6.5"
+ENV DRAWIO_VERSION "13.7.3"
 RUN set -e; \
   apt-get update && apt-get install -y \
   libappindicator3-1 \
@@ -15,6 +15,7 @@ RUN set -e; \
   libsecret-1-0 \
   libxss1 \
   libxtst6 \
+  libgbm-dev \
   sgrep \
   wget \
   xdg-utils \
