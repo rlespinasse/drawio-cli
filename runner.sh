@@ -18,10 +18,10 @@ suppress_autoupdate_warnings() {
 
 # shellcheck disable=SC2068
 if [ "${DRAWIO_CLI_SUPPRESS_WARNINGS:-false}" = true ]; then
-  "$DRAWIO_CLI" --no-sandbox $@ 2> >(suppress_deprecation_warnings) | suppress_autoupdate_warnings
+  "$DRAWIO_CLI" $@ --no-sandbox 2> >(suppress_deprecation_warnings) | suppress_autoupdate_warnings
 else
   # Currently drawio-desktop can hang inside a docker container
   # https://github.com/jgraph/drawio-desktop/issues/127
   echo "WARNING: This process can hang sometimes, don't hesitate to kill it."
-  "$DRAWIO_CLI" --no-sandbox $@
+  "$DRAWIO_CLI" $@ --no-sandbox
 fi
