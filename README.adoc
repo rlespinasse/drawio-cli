@@ -1,5 +1,9 @@
 = Draw.io cli
 
+image:https://img.shields.io/docker/v/rlespinasse/drawio-cli[Docker Version,link=https://hub.docker.com/r/rlespinasse/drawio-cli]
+image:https://img.shields.io/docker/pulls/rlespinasse/drawio-cli[Docker Pull,link=https://hub.docker.com/r/rlespinasse/drawio-cli]
+image:https://github.com/rlespinasse/drawio-cli/workflows/Build/badge.svg[Build]
+
 CLI for Draw.io
 
 == Installation
