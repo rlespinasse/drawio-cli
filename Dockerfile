@@ -2,7 +2,7 @@ FROM debian:latest
 
 WORKDIR /drawio
 
-ENV DRAWIO_VERSION "13.7.3"
+ENV DRAWIO_VERSION "14.1.8"
 RUN set -e; \
   apt-get update && apt-get install -y \
   libappindicator3-1 \

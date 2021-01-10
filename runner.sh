@@ -4,7 +4,7 @@ set -e
 # Remove Election 9 deprecation warnings from error output
 suppress_deprecation_warnings() {
   while read -r line; do
-    echo "$line" | grep -v "allowRendererProcessReuse is deprecated\|is deprecated due to security and usability issues\|is deprecated and will be removed\|DeprecationWarning: Passing functions"
+    echo "$line" | grep -v "allowRendererProcessReuse is deprecated\|is deprecated due to security and usability issues\|is deprecated and will be removed\|is deprecated and will be changing\|DeprecationWarning: Passing functions"
   done
 }
 

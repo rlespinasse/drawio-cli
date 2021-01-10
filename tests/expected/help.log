@@ -18,7 +18,7 @@ Options:
                                      specified, this option is ignored (file
                                      type is determined from output extension,
                                      possible export formats are pdf, png, jpg,
-                                     svg, vsdx) (default: "pdf")
+                                     svg, vsdx, and xml) (default: "pdf")
   -q, --quality <quality>            output image quality for JPEG (default:
                                      90)
   -t, --transparent                  set transparent background for PNG
@@ -37,4 +37,6 @@ Options:
                                      and the format is an image, the first page
                                      is selected
   -g, --page-range <from>..<to>      selects a page range (for PDF format only)
-  -h, --help                         output usage information
+  -u, --uncompressed                 Uncompressed XML output (for XML format
+                                     only)
+  -h, --help                         display help for command
