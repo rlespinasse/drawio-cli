@@ -1,5 +1,7 @@
 # Draw.io cli
 
+**DEPRECATED** Please use [https://hub.docker.com/r/rlespinasse/drawio-desktop-headless](https://hub.docker.com/r/rlespinasse/drawio-desktop-headless)
+
 CLI for Draw.io
 
 ## Installation
